@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative - Contact Us</title>
+
+    <!-- Icon Kit HERE -->
+    <script src="https://kit.fontawesome.com/6d162e65a0.js" crossorigin="anonymous"></script>
+    <!-- Google Font HERE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <!-- External Style Sheet HERE -->
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="contactHeader">
+                <div class="logo">
+                    <h1>Creative</h1>
+                </div>
+                <nav>
+                    <ul class="left">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li>
+                            <a href="#" aria-label="open search">
+                            <i class="fas fa-search" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="go to cart">
+                            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                            <span class="cartNumber">2</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <h2>Contact us</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="contactDetails wrapper">
+            <h3>Contact details</h3>
+            <p>If you need any help, please contact us or send us an email or go to our forum.</p>
+            <p>We are sure that you can receive our reply as soon as possible.</p>
+            <ul>
+                <li>
+                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                    <h4>Phone</h4>
+                    <p>Phone 01: 123, 456 7890</p>
+                    <p>Phone 02: 345 678 9101</p>
+                </li>
+                <li>
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    <h4>Address</h4>
+                    <p>6591 Orchard Street, Toronto, Ontario</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <h4>Email</h4>
+                    <p>contact@creative.com</p>
+                    <p>info@creative.com</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="getInTouch wrapper">
+            <h3>Get in touch with us</h3>
+            <p>If you have any question, Please don't hesitate to send us a message</p>
+            <form action="#" method="POST" class="contactForm" name="contactForm">
+                <div class="userInfo">
+                    <label for="userName" class="sr-only">Your Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your name...">
+                    <label for="userEmail" class="sr-only">Your email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email...">
+                    <label for="subject" class="sr-only">Your subject (optional):</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
+                </div>
+                <label for="userMessage" class="sr-only">Your message:</label>
+                <textarea id="userMessage" name="userMessage" placeholder="Here goes your message"></textarea>
+                <button type="submit">Send message</button>
+            </form>
+        </section>
+
+        <div class="contactImg">
+            <!-- Large image for contact page goes here! -->
+        </div>
+
+        <footer>
+            <div class="wrapper footerContent">
+                <ul class="contact">
+                    <li><h3>Contact us</h3></li>
+                    <li><p>6591 Orchard Street, Toronto, Ontario</p></li>
+                    <li><p>Email: contact@creative.com</p></li>
+                    <li><p>Phone 01: 123 456 7890</p></li>
+                    <li><p>Phone 02: 345 678 9101</p></li>
+                    <li><p>Fax: 643 6543 898</p></li>
+                    <li>
+                        <a href="#" aria-label="Go to Facebook account"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Go to Twitter account"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Go to Instagram account"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+                <ul class="posts">
+                    <li><h3>Recent posts</h3></li>
+                    <li><p>Conversion hackathon partner</p></li>
+                    <li><p>Network channels entrepreneur</p></li>
+                    <li><p>Return on investment creative</p></li>
+                    <li><p>Assets interaction design venture</p></li>
+                    <li><p>Infographic learning curve</p></li>
+                </ul>
+                <ul class="widget">
+                    <li><h3>Subscribe now</h3></li>
+                    <li><p>Signup for emails and notifications below.</p></li>
+                    <li>
+                        <form action="#" method="POST" class="twitterWidget" name="twitterWidget">
+                            <label for="userEmail" class="sr-only">Enter your email:</label>
+                            <input type="email" id="userEmail" name="userEmail" placeholder="Enter your email">
+                            <button type="submit" aria-label="Submit">
+                                <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                            </button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            <p class="footerText">Creative Agency</p>
+        </footer>
+    </main>
+</body>
+
+</html>
