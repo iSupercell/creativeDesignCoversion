@@ -1,0 +1,81 @@
+// Blog page header codes start HERE!
+header.blogPage {
+    background: url(../assets/blog-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+// Main blog codes start HERE!
+h2 {
+    font-size: 3rem;
+}
+
+.mainBlog {
+    padding: 6% 0;
+    a {
+        font-size: 0.65rem;
+        color: $blogPostColor;
+    }
+}
+
+// Blog post info codes start HERE!
+.blogHeader,
+.blogHeader ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogHeader {
+    border-bottom: 1px solid $blogBorderColor;
+    margin-bottom: 4.5%;
+    padding: 5.5% 0 2.5% 0;
+    li p {
+        position: relative;
+        top: 20px;
+    }
+}
+
+.blogInfo li {
+    margin: 0 35px 0 60px;
+}
+
+.blogger img {
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+p.blogLabel {
+    font-size: 0.8rem;
+}
+
+ul p {
+    font-size: 0.65rem;
+    color: $blogPostColor;
+    margin: 0;
+}
+
+// Blog post content codes start HERE!
+.blogContent p {
+    color: $blogPostColor;
+    margin: 2% 0;
+}
+
+p.starterText {
+    color: #000;
+    font-weight: bold;
+}
+
+.blogFooter {
+    display: flex;
+    margin-top: 3%;
+    li {
+        margin-right: 2%;
+    }
+    i {
+        font-size: 0.8rem;
+        color: #000;
+    }
+}

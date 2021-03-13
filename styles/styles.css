@@ -267,13 +267,13 @@ p.footerText {
 h1,
 h2,
 h3 {
-  font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.9px;
 }
 
 h1 {
   font-size: 1.85rem;
+  text-align: center;
 }
 
 p,
@@ -297,6 +297,11 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  text-decoration: line-through;
+}
+
 img {
   display: block;
 }
@@ -305,4 +310,144 @@ img {
   max-width: 1200px;
   width: 80%;
   margin: 0 auto;
+}
+
+nav,
+.left,
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.homeHeader {
+  padding-top: 45px;
+}
+
+.homeHeader nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left a,
+.right a {
+  font-size: 0.7rem;
+  letter-spacing: 0.3px;
+  position: relative;
+  top: 10px;
+}
+
+.left a {
+  padding: 0 20px 0 10px;
+}
+
+.right a {
+  padding: 0 10px 0 20px;
+}
+
+.right a i {
+  font-size: 1rem;
+}
+
+.fa-shopping-bag::after {
+  content: '2';
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.4rem;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #C3DAB7;
+  position: relative;
+  bottom: 6px;
+  left: 10px;
+  padding: 4px 0 0 6px;
+}
+
+header.blogPage {
+  background: url(../assets/blog-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.mainBlog {
+  padding: 6% 0;
+}
+
+.mainBlog a {
+  font-size: 0.65rem;
+  color: #999;
+}
+
+.blogHeader,
+.blogHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogHeader {
+  border-bottom: 1px solid #E1E1E1;
+  margin-bottom: 4.5%;
+  padding: 5.5% 0 2.5% 0;
+}
+
+.blogHeader li p {
+  position: relative;
+  top: 20px;
+}
+
+.blogInfo li {
+  margin: 0 35px 0 60px;
+}
+
+.blogger img {
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+p.blogLabel {
+  font-size: 0.8rem;
+}
+
+ul p {
+  font-size: 0.65rem;
+  color: #999;
+  margin: 0;
+}
+
+.blogContent p {
+  color: #999;
+  margin: 2% 0;
+}
+
+p.starterText {
+  color: #000;
+  font-weight: bold;
+}
+
+.blogFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 3%;
+}
+
+.blogFooter li {
+  margin-right: 2%;
+}
+
+.blogFooter i {
+  font-size: 0.8rem;
+  color: #000;
 }

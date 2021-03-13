@@ -30,13 +30,13 @@ p.footerText {
 h1,
 h2,
 h3 {
-    font-size: 3rem;
     font-weight: 700;
     letter-spacing: 0.9px;
 }
 
 h1 {
     font-size: 1.85rem;
+    text-align: center;
 }
 
 p,
@@ -58,6 +58,11 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: line-through;
 }
 
 img {

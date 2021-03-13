@@ -1,0 +1,50 @@
+// Display Flex properties for Header
+nav,
+.left,
+.right {
+    display: flex;
+}
+
+// Nav code starts HERE!
+.homeHeader {
+    padding-top: 45px;
+    nav {
+        justify-content: space-between; 
+    }
+}
+
+.left a,
+.right a {
+    font-size: 0.7rem;
+    letter-spacing: 0.3px;
+    position: relative;
+    top: 10px;
+}
+
+.left a {
+    padding: 0 20px 0 10px;
+}
+
+.right a {
+    padding: 0 10px 0 20px;
+    i {
+        font-size: 1rem;
+    }
+}
+
+// This selector is not using camelCase naming
+// convention due to FontAwesome's preset class name.
+.fa-shopping-bag::after {
+    content: '2';
+    font-family: $headlineFont;
+    font-size: 0.4rem;
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: $tertiaryColor;
+    position: relative;
+    bottom: 6px;
+    left: 10px;
+    padding: 4px 0 0 6px;
+}
