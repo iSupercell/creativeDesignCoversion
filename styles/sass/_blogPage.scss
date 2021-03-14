@@ -79,3 +79,110 @@ p.starterText {
         color: #000;
     }
 }
+
+// Related blog posts codes start HERE!
+h3 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid $blogBorderColor;
+    margin-bottom: 4.5%;
+    padding-bottom: 2%;
+}
+
+.blogGallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8%;
+    img {
+        margin-bottom: 5%;
+    }
+}
+
+// Blog comments codes start HERE!
+.blogComments {
+    margin-bottom: 5%;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 2.5%;
+}
+
+.avatar {
+    margin-right: 3%;
+}
+
+.commentText {
+    background: $secondaryColor;
+    padding: 1% 2%;
+    width: 100%;
+    position: relative;
+    p {
+        color: $blogCommentColor;
+        margin: 0;
+        padding: 0.4% 0;
+    }
+}
+
+.commentText::before {
+    content: '\25C2';
+    font-size: 2rem;
+    color: $secondaryColor;
+    position: absolute;
+    top: 0px;
+    left: -23px;
+}
+
+p.commenter {
+    font-size: 0.67rem;
+    color: #000;
+    a {
+        color: $blogReplyLink;
+        text-transform: none;
+        font-style: italic;
+    }
+}
+
+p.commentDate {
+    font-size: 0.57rem;
+    text-transform: none;
+    margin-bottom: 1.5%;
+}
+
+// Contact form codes start HERE!
+.userInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid $blogBorderColor;
+    margin-bottom: 3%;
+    padding-bottom: 0.8%;
+}
+
+input {
+    width: calc(95% / 3);
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 160px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #000;
+}
+
+.contactForm button {
+    font-size: 0.7rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #000;
+    margin-top: 2%;
+    padding-bottom: 0.8%;
+}

@@ -451,3 +451,120 @@ p.starterText {
   font-size: 0.8rem;
   color: #000;
 }
+
+h3 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid #E1E1E1;
+  margin-bottom: 4.5%;
+  padding-bottom: 2%;
+}
+
+.blogGallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8%;
+}
+
+.blogGallery img {
+  margin-bottom: 5%;
+}
+
+.blogComments {
+  margin-bottom: 5%;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.5%;
+}
+
+.avatar {
+  margin-right: 3%;
+}
+
+.commentText {
+  background: #F6F6F6;
+  padding: 1% 2%;
+  width: 100%;
+  position: relative;
+}
+
+.commentText p {
+  color: #666;
+  margin: 0;
+  padding: 0.4% 0;
+}
+
+.commentText::before {
+  content: '\25C2';
+  font-size: 2rem;
+  color: #F6F6F6;
+  position: absolute;
+  top: 0px;
+  left: -23px;
+}
+
+p.commenter {
+  font-size: 0.67rem;
+  color: #000;
+}
+
+p.commenter a {
+  color: #405E31;
+  text-transform: none;
+  font-style: italic;
+}
+
+p.commentDate {
+  font-size: 0.57rem;
+  text-transform: none;
+  margin-bottom: 1.5%;
+}
+
+.userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #E1E1E1;
+  margin-bottom: 3%;
+  padding-bottom: 0.8%;
+}
+
+input {
+  width: calc(95% / 3);
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+  height: 160px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.contactForm button {
+  font-size: 0.7rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  margin-top: 2%;
+  padding-bottom: 0.8%;
+}
