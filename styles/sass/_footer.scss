@@ -1,0 +1,85 @@
+footer {
+    background: $footerColor;
+    margin-top: 10%;
+    padding-top: 8%;
+    p,
+    p.footerHead,
+    a {
+        color: $primaryColor;
+    }
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    p {
+        font-size: 0.75rem;
+    }
+}
+
+p.footerHead {
+    font-size: 0.9rem;
+    margin-bottom: 15%;
+}
+
+// Social media icons position
+.socials {
+    display: flex;
+    li {
+        margin-top: 12%;
+        margin-right: 8%;
+    }
+    i {
+        font-size: 0.8rem;
+    }
+}
+
+// Recent posts positioning
+.posts li {
+    position: relative;
+    margin: 3.5% 0;
+    .footerHead {
+        text-align: center;
+    }
+}
+
+// Add small bullets to list except the 1st child
+.posts li:not(:first-child)::before {
+    content: '•';
+    font-size: 0.65rem;
+    color: $primaryColor;
+    position: absolute;
+    top: 5px;
+    left: -10px;
+}
+
+// Footer form styling
+.widget {
+    text-align: right;
+    form {
+        margin-top: 12%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    input {
+        font-size: 0.65rem;
+        width: 75%;
+        margin: 0;
+        padding: 3% 5%;
+    }
+    button {
+        background: $tertiaryColor;
+        border: none;
+        padding: 0 5%;
+    }
+}
+
+// Bottom footer styling
+p.footerText {
+    letter-spacing: 8px;
+    color: $primaryColor;
+    text-align: center;
+    border-top: 1px solid $footerBorderColor;
+    margin-top: 8%;
+    padding: 4%;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -295,6 +296,7 @@ ul {
 
 a {
   text-decoration: none;
+  position: relative;
 }
 
 a:hover,
@@ -567,4 +569,103 @@ textarea:focus {
   border-bottom: 1px solid #000;
   margin-top: 2%;
   padding-bottom: 0.8%;
+}
+
+footer {
+  background: #333;
+  margin-top: 10%;
+  padding-top: 8%;
+}
+
+footer p,
+footer p.footerHead,
+footer a {
+  color: #FFF;
+}
+
+.footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footerContent p {
+  font-size: 0.75rem;
+}
+
+p.footerHead {
+  font-size: 0.9rem;
+  margin-bottom: 15%;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.socials li {
+  margin-top: 12%;
+  margin-right: 8%;
+}
+
+.socials i {
+  font-size: 0.8rem;
+}
+
+.posts li {
+  position: relative;
+  margin: 3.5% 0;
+}
+
+.posts li .footerHead {
+  text-align: center;
+}
+
+.posts li:not(:first-child)::before {
+  content: '•';
+  font-size: 0.65rem;
+  color: #FFF;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+}
+
+.widget {
+  text-align: right;
+}
+
+.widget form {
+  margin-top: 12%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.widget input {
+  font-size: 0.65rem;
+  width: 75%;
+  margin: 0;
+  padding: 3% 5%;
+}
+
+.widget button {
+  background: #C3DAB7;
+  border: none;
+  padding: 0 5%;
+}
+
+p.footerText {
+  letter-spacing: 8px;
+  color: #FFF;
+  text-align: center;
+  border-top: 1px solid #484848;
+  margin-top: 8%;
+  padding: 4%;
 }
