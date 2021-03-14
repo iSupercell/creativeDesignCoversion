@@ -30,7 +30,7 @@ p.footerText {
 h1,
 h2,
 h3 {
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: 0.9px;
 }
 
@@ -59,15 +59,24 @@ ul {
 a {
     text-decoration: none;
     position: relative;
+    i {
+    transition: 0.2s;
+    }
 }
 
 a:hover,
 a:focus {
     text-decoration: line-through;
+    
 }
 
 img {
     display: block;
+}
+
+a i:hover,
+.blogFooter a i:hover {
+    color: $tertiaryColor;
 }
 
 .wrapper {

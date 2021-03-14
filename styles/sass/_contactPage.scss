@@ -1,0 +1,97 @@
+// Contact page header codes start HERE!
+.contactImg1 {
+    background: url(../assets/contact-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 24vh;
+    margin-top: 45px;
+    h2 {
+        width: 20%;
+        position: absolute;
+        top: 28.5%;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: -45px;
+        border-top: 3px solid #000;
+        width: 40px;
+    }
+}
+
+// Contact detail codes start HERE!
+.contactDetails {
+    margin-top: 8%;
+    p {
+        color: $blogColor;
+        margin: 0.4% 0;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 8% 0;
+    }
+    i {
+        font-size: 2rem;
+    }
+    .contactTitle {
+        font-size: 0.7rem;
+        color: #000;
+        font-weight: bold;
+        letter-spacing: 5px;
+        padding: 12% 0 5% 0;
+    }
+    li p {
+        color: $commentColor;
+    }
+}
+
+// Contact details divider lines
+.divider {
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    border-left: 1px solid $borderColor;
+    height: 225px;
+}
+
+.divider::before {
+    position: absolute;
+    top: -30%;
+    left: -30%;
+}
+
+.divider::after {
+    position: absolute;
+    bottom: -30%;
+    right: -30%;
+}
+
+// Get in touch section codes start HERE!
+.getInTouch p {
+    color: $blogColor;
+}
+
+.getInTouch form {
+    margin: 9% 0;
+}
+
+.getInTouch button {
+    font-weight: bold;
+}
+
+p.contactHead {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2%;
+}
+
+// Contact page bottom image codes start HERE
+.contactImg2 img {
+    width: 100%;
+}

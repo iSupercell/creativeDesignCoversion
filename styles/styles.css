@@ -268,7 +268,7 @@ p.footerText {
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.9px;
 }
 
@@ -299,6 +299,11 @@ a {
   position: relative;
 }
 
+a i {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 a:hover,
 a:focus {
   text-decoration: line-through;
@@ -306,6 +311,11 @@ a:focus {
 
 img {
   display: block;
+}
+
+a i:hover,
+.blogFooter a i:hover {
+  color: #C3DAB7;
 }
 
 .wrapper {
@@ -365,6 +375,12 @@ nav,
   bottom: 6px;
   left: 10px;
   padding: 4px 0 0 6px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.fa-shopping-bag:hover::after {
+  background: #000;
 }
 
 header.blogPage {
@@ -529,6 +545,10 @@ p.commentDate {
   margin-bottom: 1.5%;
 }
 
+.blogForm {
+  margin-bottom: 10%;
+}
+
 .userInfo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -571,9 +591,116 @@ textarea:focus {
   padding-bottom: 0.8%;
 }
 
+.contactForm button:hover,
+.contactForm button:focus {
+  text-decoration: line-through;
+}
+
+.contactImg1 {
+  background: url(../assets/contact-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 24vh;
+  margin-top: 45px;
+}
+
+.contactImg1 h2 {
+  width: 20%;
+  position: absolute;
+  top: 28.5%;
+}
+
+.contactImg1 h2::before {
+  content: '';
+  position: absolute;
+  top: -45px;
+  border-top: 3px solid #000;
+  width: 40px;
+}
+
+.contactDetails {
+  margin-top: 8%;
+}
+
+.contactDetails p {
+  color: #999;
+  margin: 0.4% 0;
+}
+
+.contactDetails ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 8% 0;
+}
+
+.contactDetails i {
+  font-size: 2rem;
+}
+
+.contactDetails .contactTitle {
+  font-size: 0.7rem;
+  color: #000;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 12% 0 5% 0;
+}
+
+.contactDetails li p {
+  color: #666;
+}
+
+.divider {
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  border-left: 1px solid #E1E1E1;
+  height: 225px;
+}
+
+.divider::before {
+  position: absolute;
+  top: -30%;
+  left: -30%;
+}
+
+.divider::after {
+  position: absolute;
+  bottom: -30%;
+  right: -30%;
+}
+
+.getInTouch p {
+  color: #999;
+}
+
+.getInTouch form {
+  margin: 9% 0;
+}
+
+.getInTouch button {
+  font-weight: bold;
+}
+
+p.contactHead {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 2%;
+}
+
+.contactImg2 img {
+  width: 100%;
+}
+
 footer {
   background: #333;
-  margin-top: 10%;
   padding-top: 8%;
 }
 
@@ -659,6 +786,11 @@ p.footerHead {
   background: #C3DAB7;
   border: none;
   padding: 0 5%;
+}
+
+.widget button:hover,
+.widget button i:hover {
+  color: #FFF;
 }
 
 p.footerText {

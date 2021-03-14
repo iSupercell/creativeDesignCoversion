@@ -1,6 +1,5 @@
 footer {
     background: $footerColor;
-    margin-top: 10%;
     padding-top: 8%;
     p,
     p.footerHead,
@@ -71,6 +70,10 @@ p.footerHead {
         background: $tertiaryColor;
         border: none;
         padding: 0 5%;
+    }
+    button:hover,
+    button i:hover {
+        color: $primaryColor;
     }
 }
 

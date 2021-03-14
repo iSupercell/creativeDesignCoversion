@@ -47,4 +47,9 @@ nav,
     bottom: 6px;
     left: 10px;
     padding: 4px 0 0 6px;
+    transition: 0.2s;
+}
+
+.fa-shopping-bag:hover::after {
+    background: #000;
 }
