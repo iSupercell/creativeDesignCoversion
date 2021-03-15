@@ -1,0 +1,234 @@
+// Home page header codes start HERE!
+header.homePage {
+    background: url(../assets/home-1.jpeg);
+    background-position: bottom center;
+    background-size: cover;
+    height: 100vh;
+}
+
+// First section codes start HERE!
+.firstSection {
+    background: $tertiaryColor;
+    position: relative;
+}
+
+.line1::before {
+    content: '';
+    border-left: 1px solid $blogColor;
+    height: 160px;
+    position: absolute;
+    top: -10%;
+    left: 50%;
+}
+
+.homeImg1 {
+    position: relative;
+    padding-top: 16%;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.circleText img {
+    position: absolute;
+    top: 22%;
+    left: 21.5%;
+}
+
+.firstContent {
+    display: flex;
+    justify-content: center;
+}
+
+.brandingText,
+.designText {
+    width: 30%;
+    text-align: center;
+    margin: 6.5% 1.5% 10% 1.5%;
+    p.homeHead {
+        font-size: 0.9rem;
+        letter-spacing: 1.8px;
+        line-height: 24px;
+    }
+}
+
+// Second section codes start HERE!
+.secondContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 0 6.5% 0;
+    position: relative;
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+        font-style: italic;
+        line-height: 30px;
+        color: $commentColor;
+        width: 68%;
+        margin-top: 3%;
+    }
+}
+
+.homeImg2 img {
+    border-radius: 50%;
+}
+
+.toggleArrows {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    button {
+        font-size: 2.5rem;
+        background: none;
+        border: none;
+        transition: 0.2s;
+    }
+    button:hover,
+    button:focus {
+        color: $commentColor;
+    }
+}
+
+// Third section codes start HERE!
+.thirdSection {
+    background: url(../assets/home-4.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.thirdContent {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        width: 33%;
+        margin-top: 18.5%;
+    }
+    li {
+        
+        display: flex;
+        margin: 0 0 23% 10%;
+    }
+}
+
+.rightList {
+    margin-right: -150px;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-right: 10%;
+    i {
+        font-size: 1.5rem;
+        color: $footerColor;
+        padding: 25px;
+    }
+}
+
+p.homeHead {
+    font-size: 0.9rem;
+    margin-bottom: 4%;
+}
+
+// Fourth section codes start HERE!
+.fourthSection {
+    position: relative;
+}
+
+.line2::before {
+    content: '';
+    border-left: 1px solid $blogColor;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+h2.sectionHead {
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 11.5%;
+}
+
+.fourthContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8%;
+    li {
+        margin: 1.2%;
+    }
+}
+
+.teamPlayers {
+    background: $secondaryColor;
+    width: calc(540px + 2.4%);
+    display: block;
+    p {
+        font-size: 0.7rem;
+        color: $commentColor;
+        padding: 0 5% 5% 8%;
+    }
+    .teamHead {
+        font-size: 0.85rem;
+        letter-spacing: 2.3px;
+        color: $footerColor;
+        padding: 20% 0 4% 8%;
+    }
+}
+
+.recruit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 270px;
+    .teamHead {
+        color: $footerColor;
+        font-size: 0.75rem;
+        letter-spacing: 1.8px;
+        text-align: center;
+        width: 60%;
+    }
+}
+
+// Fifth section codes start HERE!
+.fifthSection {
+    background: $tertiaryColor;
+    display: flex;
+    margin-top: 10%;
+}
+
+.fifthContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2.sectionHead {
+        margin: -9% 0 4% 0;
+    }
+    p {
+        text-align: center;
+        width: 52%;
+        color: $commentColor;
+    }
+    a {
+        font-size: 0.7rem;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        line-height: 24px;
+        background: $primaryColor;
+        margin-top: 4%;
+        padding: 1.7% 3.2%;
+    }
+}

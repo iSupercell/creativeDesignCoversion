@@ -32,9 +32,7 @@ nav,
     }
 }
 
-// This selector is not using camelCase naming
-// convention due to FontAwesome's preset class name.
-.fa-shopping-bag::after {
+.userCart::after {
     content: '2';
     font-family: $headlineFont;
     font-size: 0.4rem;

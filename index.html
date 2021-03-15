@@ -34,7 +34,7 @@
                     </li>
                     <li>
                         <a href="#" aria-label="go to cart">
-                        <i class="fas fa-shopping-bag" aria-hidden="true"></i></a>
+                        <i class="fas fa-shopping-bag userCart" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </nav>
@@ -45,11 +45,11 @@
         <section class="firstSection">
             <div class="wrapper">
                 <div class="line1" aria-hidden="true"></div>
-                <div class="circleText">
-                    <img src="./assets/home-circle-text.png" alt="Branding and website pros">
-                </div>
                 <div class="homeImg1">
                     <img src="./assets/home-2.jpeg" alt="A work desk with an iMac, an interior fragrance bottle and a house plant.">
+                    <div class="circleText">
+                        <img src="./assets/home-circle-text.png" alt="Branding and website pros.">
+                    </div>
                 </div>
                 <div class="firstContent">
                     <div class="brandingText">
@@ -67,14 +67,14 @@
         <section class="secondSection">
             <div class="wrapper secondContent">
                 <div class="homeImg2">
-                    <img src="./assets/home-3.jpeg" alt="prints of design layouts">
+                    <img src="./assets/home-3.jpeg" alt="Prints of design layouts.">
                 </div>
                 <div class="toggleArrows">
                     <button class="arrowLeft" aria-label="toggle left">
-                        <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        <i class="fas fa-angle-left" aria-hidden="true"></i>
                     </button>
                     <button class="arrowRight" aria-label="toggle right">
-                        <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        <i class="fas fa-angle-right" aria-hidden="true"></i>
                     </button>
                 </div>
                 <p>Ecosystem iPad disruptive social media low hanging fruit stealth launch party handshake market branding. Pitch agile development business plan stealth channels prototype mass market product management value proposition startup strategy. Product management early adopters user experience metrics advisor gamification responsive web design hackathon termsheet backing series.</p>
@@ -82,37 +82,63 @@
         </section>
 
         <section class="thirdSection">
-            <div class="wrapper">
-                <ul class="thirdContent">
+            <div class="wrapper thirdContent">
+                <ul class="leftList">
                     <li>
-                        <i class="fas fa-magic" aria-hidden="true"></i>
-                        <p class="homeHead">Unique Design</p>
-                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        <div class="iconContainer">
+                            <i class="fas fa-magic" aria-hidden="true"></i>
+                        </div>
+                        <div class="textContent">
+                            <p class="homeHead">Unique Design</p>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="fas fa-map-pin" aria-hidden="true"></i>
-                        <p class="homeHead">SEO Marketing</p>
-                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        <div class="iconContainer">
+                            <i class="fas fa-desktop" aria-hidden="true"></i>
+                        </div>
+                        <div class="textContent">
+                            <p class="homeHead">Retina Ready</p>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="fas fa-desktop" aria-hidden="true"></i>
-                        <p class="homeHead">Retina Ready</p>
-                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        <div class="iconContainer">
+                            <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                        </div>
+                        <div class="textContent">
+                            <p class="homeHead">Advanced Options</p>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="rightList">
+                    <li>
+                        <div class="iconContainer">
+                            <i class="fas fa-map-pin" aria-hidden="true"></i>
+                        </div>
+                        <div class="textContent">
+                            <p class="homeHead">SEO Marketing</p>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
-                        <p class="homeHead">Ecommerce Ready</p>
-                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        <div class="iconContainer">
+                            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        </div>
+                        <div class="textContent">
+                            <p class="homeHead">Ecommerce Ready</p>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
                     </li>
                     <li>
-                        <i class="fas fa-sliders-h" aria-hidden="true"></i>
-                        <p class="homeHead">Advanced Options</p>
-                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
-                    </li>
-                    <li>
-                        <i class="fas fa-smile" aria-hidden="true"></i>
-                        <p class="homeHead">Customizable</p>
-                        <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        <div class="iconContainer">
+                            <i class="fas fa-smile" aria-hidden="true"></i>
+                        </div>
+                        <div class="textContent">
+                            <p class="homeHead">Customizable</p>
+                            <p>Twitter validation first mover advantage advisor angel investor beta churn rate low hanging fruit burn.</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -123,16 +149,16 @@
                 <div class="line2" aria-hidden="true"></div>
                 <h2 class="sectionHead">Meet our team</h2>
                 <ul class="fourthContent">
-                    <li>
+                    <li class="teamPlayers">
                         <p class="teamHead">Team players</p>
                         <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
                     </li>
-                    <li><img src="./assets/home-5.jpeg" alt="headshot of a man wearing a sleeveless blazer over a button down shirt with a orange necktie"></li>
-                    <li><img src="./assets/home-6.jpeg" alt="headshot of a woman with short bleached hair"></li>
-                    <li><img src="./assets/home-7.jpeg" alt="headshot of a woman with long brown hair wearing a stripe tanktop with tattoo on her left shoulder"></li>
-                    <li><img src="./assets/home-8.jpeg" alt="headshot of a man with wavy short hair wearing a black shirt"></li>
-                    <li><img src="./assets/home-9.jpeg" alt="headshot of woman with black hair tied in a bun wearing glasses"></li>
-                    <li><p class="teamHead">Want to work with us!</p></li>
+                    <li><img src="./assets/home-5.jpeg" alt="Headshot of an employee wearing a sleeveless blazer over a button down shirt with a orange necktie."></li>
+                    <li><img src="./assets/home-6.jpeg" alt="Headshot of an employee with short bleached hair."></li>
+                    <li><img src="./assets/home-7.jpeg" alt="Headshot of an employee with long brown hair wearing a stripe tanktop with tattoo on her left shoulder."></li>
+                    <li><img src="./assets/home-8.jpeg" alt="Headshot of an employee with wavy short hair wearing a black shirt."></li>
+                    <li><img src="./assets/home-9.jpeg" alt="Headshot of an employee with black hair tied in a bun wearing glasses."></li>
+                    <li class="recruit"><p class="teamHead">Want to work with us!</p></li>
                 </ul>
             </div>
         </section>
@@ -142,6 +168,9 @@
                 <h2 class="sectionHead">Drop us a line</h2>
                 <p>Pitch client interaction design ownership disruptive leverage prototype conversion. Deployment validation gen-z disruptive paradigm shift churn rate niche market graphical user interface.</p>
                 <a href="#">View portfolio</a>
+            </div>
+            <div class="homeImg3">
+                <img src="./assets/home-10.jpeg" alt="Overhead view of a work desk showing a phone, a file folder and a drink.">
             </div>
         </section>
     </main>

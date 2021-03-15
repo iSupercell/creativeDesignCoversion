@@ -70,13 +70,13 @@ a:focus {
     
 }
 
-img {
-    display: block;
-}
-
 a i:hover,
 .blogFooter a i:hover {
     color: $tertiaryColor;
+}
+
+img {
+    display: block;
 }
 
 .wrapper {
@@ -84,3 +84,9 @@ a i:hover,
     width: 80%;
     margin: 0 auto;
 }
+
+// .wrapper2 {
+//     max-width: 1400px;
+//     width: 100%;
+//     margin: 0 auto;
+// }
