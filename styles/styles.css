@@ -922,7 +922,7 @@ textarea:focus {
 .contactImg1 h2 {
   width: 20%;
   position: absolute;
-  top: 28.5%;
+  top: 32%;
 }
 
 .contactImg1 h2::before {
@@ -1208,6 +1208,37 @@ p.footerText {
   }
 }
 
+@media (max-width: 1115px) {
+  .blogger {
+    margin-top: 3.5%;
+  }
+  .blogInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    margin: 0 0 2% 0;
+  }
+  .blogInfo p {
+    padding: 1.5% 0;
+  }
+  .blogInfo li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  p.blogLabel {
+    margin-right: 3%;
+  }
+  .contactDetails {
+    margin-top: 12%;
+  }
+  .contactDetails ul {
+    margin-bottom: 12%;
+  }
+}
+
 @media (max-width: 1111px) {
   .homeHeader nav {
     -webkit-box-pack: center;
@@ -1234,6 +1265,18 @@ p.footerText {
     width: 40%;
     margin: 7% 4% 13% 4%;
   }
+  .divider::before,
+  .divider::after {
+    height: 180px;
+  }
+  .divider::before {
+    top: -15%;
+    left: -20%;
+  }
+  .divider::after {
+    bottom: -15%;
+    right: -20%;
+  }
 }
 
 @media (max-width: 1082px) {
@@ -1248,15 +1291,13 @@ p.footerText {
   }
   .thirdContent ul {
     width: 70%;
+    margin-top: 0;
   }
   .thirdContent li {
     margin-bottom: 5%;
   }
-  .leftList {
-    margin-top: 110px;
-  }
-  .rightList {
-    margin: 0;
+  ul.leftList {
+    margin-top: 150px;
   }
   .iconContainer {
     width: 55px;
@@ -1266,6 +1307,12 @@ p.footerText {
   .iconContainer i {
     font-size: 1.2rem;
   }
+  .divider::before {
+    left: -15%;
+  }
+  .divider::after {
+    right: -15%;
+  }
 }
 
 @media (max-width: 974px) {
@@ -1273,5 +1320,120 @@ p.footerText {
   .designText {
     width: 50%;
     margin: 7% 4% 13% 4%;
+  }
+  .contact,
+  .posts {
+    width: calc(100% / 2 - 10%);
+    margin: 0 0 6% 10%;
+  }
+}
+
+@media (max-width: 940px) {
+  .wrapper {
+    width: 90%;
+  }
+  .line1::before {
+    height: 100px;
+    position: absolute;
+    top: -6%;
+    left: 50%;
+  }
+  .firstContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .brandingText,
+  .designText {
+    width: 340px;
+    margin: 7% 0 0 0;
+  }
+  .designText {
+    width: 340px;
+    margin: 7% 0 10% 0;
+  }
+  .circleText {
+    width: 100%;
+  }
+  .circleText img {
+    width: 30%;
+    top: 10%;
+    left: 10%;
+  }
+  .secondContent {
+    padding: 10% 0 9% 0;
+  }
+  .secondContent p {
+    margin-top: 5%;
+  }
+  .toggleArrows Button {
+    font-size: 4rem;
+  }
+  .line2::before {
+    height: 50px;
+  }
+  .fifthContent p {
+    width: 75%;
+  }
+  .contact,
+  .posts {
+    width: 100%;
+    margin: 0 0 8% 35%;
+  }
+  .posts li {
+    margin-bottom: 0;
+  }
+  p.footerHead {
+    margin-bottom: 3%;
+  }
+  .socials li {
+    margin-top: 5%;
+    margin-right: 8%;
+  }
+  .widget {
+    width: 70%;
+  }
+  .widget form {
+    margin-top: 5%;
+  }
+  .widget input {
+    font-size: 0.8rem;
+  }
+  p.footerText {
+    margin-top: 10%;
+  }
+  .mainBlog {
+    padding-bottom: 9%;
+  }
+  h3 {
+    margin-bottom: 6%;
+  }
+  .blogFooter {
+    margin-top: 5%;
+  }
+  .blogGallery {
+    margin-bottom: 10%;
+  }
+  .blogComments {
+    margin-bottom: 10%;
+  }
+  .userInfo {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .userInfo input {
+    width: calc(100% /2 - 2%);
+    margin-bottom: 5%;
+    padding: 0 1%;
+  }
+  .userInfo input:last-child {
+    width: 100%;
+  }
+  textarea {
+    margin-bottom: 5%;
   }
 }
