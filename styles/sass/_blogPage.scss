@@ -1,7 +1,7 @@
 // Blog page header codes start HERE!
 header.blogPage {
     background: url(../assets/blog-1.jpeg);
-    background-position: bottom center;
+    background-position: center;
     background-size: cover;
     height: 100vh;
 }
@@ -89,11 +89,26 @@ h3 {
 
 .blogGallery {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 8%;
+    li {
+        width: 100%;
+    }
     img {
+        width: 100%;
         margin-bottom: 5%;
     }
+}
+
+.firstPost {
+    margin-right: 1%;
+}
+
+.secondPost {
+    margin: 0 1%;
+}
+
+.thirdPost {
+    margin-left: 1%;
 }
 
 // Blog comments codes start HERE!

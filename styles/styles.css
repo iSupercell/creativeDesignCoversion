@@ -347,7 +347,7 @@ nav,
   font-size: 0.7rem;
   letter-spacing: 0.3px;
   position: relative;
-  top: 10px;
+  top: -32px;
 }
 
 .left a {
@@ -677,9 +677,17 @@ h2.sectionHead {
   padding: 1.7% 3.2%;
 }
 
+.homeImg3 {
+  width: 80%;
+}
+
+.homeImg3 img {
+  width: 100%;
+}
+
 header.blogPage {
   background: url(../assets/blog-1.jpeg);
-  background-position: bottom center;
+  background-position: center;
   background-size: cover;
   height: 100vh;
 }
@@ -774,14 +782,28 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 8%;
 }
 
+.blogGallery li {
+  width: 100%;
+}
+
 .blogGallery img {
+  width: 100%;
   margin-bottom: 5%;
+}
+
+.firstPost {
+  margin-right: 1%;
+}
+
+.secondPost {
+  margin: 0 1%;
+}
+
+.thirdPost {
+  margin-left: 1%;
 }
 
 .blogComments {
@@ -891,7 +913,7 @@ textarea:focus {
 
 .contactImg1 {
   background: url(../assets/contact-1.jpeg);
-  background-position: center;
+  background-position: left;
   background-size: cover;
   height: 24vh;
   margin-top: 45px;
@@ -1037,7 +1059,7 @@ p.footerHead {
 
 .posts li {
   position: relative;
-  margin: 3.5% 0;
+  margin-bottom: 3.5%;
 }
 
 .posts li .footerHead {
@@ -1092,4 +1114,164 @@ p.footerText {
   border-top: 1px solid #484848;
   margin-top: 8%;
   padding: 4%;
+}
+
+@media (max-width: 1600px) {
+  .rightList {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1500px) {
+  .circleText img {
+    top: 15%;
+    left: 18%;
+  }
+  .brandingText,
+  .designText {
+    margin: 6.5% 2.5% 10% 2.5%;
+  }
+  .thirdContent ul {
+    width: 35%;
+    margin-top: 22%;
+  }
+  .thirdContent li {
+    margin-bottom: 15%;
+  }
+  .iconContainer {
+    width: 55px;
+    height: 55px;
+    margin-right: 5%;
+  }
+  .iconContainer i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .thirdContent ul {
+    margin-top: 27%;
+  }
+}
+
+@media (max-width: 1300px) {
+  footer {
+    padding-top: 9%;
+  }
+  .footerContent {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact,
+  .posts {
+    width: calc(100% / 2 - 15%);
+    margin: 0 0 6% 15%;
+  }
+  p.footerHead {
+    margin-bottom: 7%;
+  }
+  .posts p.footerHead {
+    text-align: left;
+  }
+  .widget {
+    width: 50%;
+    text-align: center;
+  }
+  .widget form {
+    margin-top: 8%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .widget input {
+    font-size: 0.75rem;
+  }
+  p.footerText {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 1294px) {
+  .homeImg1 {
+    padding-top: 20%;
+  }
+  .circleText img {
+    left: 13%;
+  }
+  .brandingText,
+  .designText {
+    width: 35%;
+    margin: 7% 3.5% 13% 3.5%;
+  }
+}
+
+@media (max-width: 1111px) {
+  .homeHeader nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .left,
+  .right {
+    width: 50%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .left a,
+  .right a {
+    top: 30px;
+    padding: 0;
+  }
+  .circleText img {
+    top: 10%;
+    left: 5%;
+  }
+  .brandingText,
+  .designText {
+    width: 40%;
+    margin: 7% 4% 13% 4%;
+  }
+}
+
+@media (max-width: 1082px) {
+  .thirdContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .thirdContent ul {
+    width: 70%;
+  }
+  .thirdContent li {
+    margin-bottom: 5%;
+  }
+  .leftList {
+    margin-top: 110px;
+  }
+  .rightList {
+    margin: 0;
+  }
+  .iconContainer {
+    width: 55px;
+    height: 55px;
+    margin-right: 5%;
+  }
+  .iconContainer i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 974px) {
+  .brandingText,
+  .designText {
+    width: 50%;
+    margin: 7% 4% 13% 4%;
+  }
 }

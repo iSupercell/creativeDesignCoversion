@@ -108,7 +108,6 @@ header.homePage {
         margin-top: 18.5%;
     }
     li {
-        
         display: flex;
         margin: 0 0 23% 10%;
     }
@@ -230,5 +229,13 @@ h2.sectionHead {
         background: $primaryColor;
         margin-top: 4%;
         padding: 1.7% 3.2%;
+    }
+}
+
+.homeImg3 {
+    width: 80%;
+    // overflow: hiiden;
+    img {
+        width: 100%;
     }
 }

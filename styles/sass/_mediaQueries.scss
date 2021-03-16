@@ -1,0 +1,166 @@
+// Home page 3rd section icon gallery adjustment
+@media (max-width: 1600px) {
+    .rightList {
+        margin-right: 0;
+    }
+}
+
+// Home page 1st and 3rd section adjustment
+@media (max-width: 1500px) {
+    .circleText img {
+        top: 15%;
+        left: 18%;
+    }
+    .brandingText,
+    .designText {
+        margin: 6.5% 2.5% 10% 2.5%;
+    }
+    .thirdContent ul {
+        width: 35%;
+        margin-top: 22%;
+    }
+    .thirdContent li {
+        margin-bottom: 15%;
+    }
+    .iconContainer {
+        width: 55px;
+        height: 55px;
+        margin-right: 5%;
+        i {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Home page 3rd section icon gallery adjustment
+@media (max-width: 1350px) {
+    .thirdContent ul {
+        margin-top: 27%;
+    }
+}
+
+// Footer section adjustment
+@media (max-width: 1300px) {
+    footer {
+        padding-top: 9%;
+    }
+    .footerContent {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact,
+    .posts {
+        width: calc(100% / 2 - 15%);
+        margin: 0 0 6% 15%;
+    }
+    p.footerHead {
+        margin-bottom: 7%;
+    }
+    .posts p.footerHead {
+        text-align: left;
+    }
+    .widget {
+        width: 50%;
+        text-align: center;
+        form {
+            margin-top: 8%;
+            justify-content: center;
+        }
+        input {
+            font-size: 0.75rem;
+        }
+    }
+    p.footerText {
+        margin-top: 5%;
+    }
+}
+
+// Home page 1st section adjustment
+@media (max-width: 1294px) {
+    .homeImg1 {
+        padding-top: 20%;
+    }
+    .circleText img {
+        left: 13%;
+    }
+    .brandingText,
+    .designText {
+        width: 35%;
+        margin: 7% 3.5% 13% 3.5%;
+    }
+}
+
+// Home page header and 1st section adjustment
+@media (max-width: 1111px) {
+    .homeHeader nav {
+        justify-content: center;
+    }
+    .left,
+    .right {
+        width: 50%;
+        justify-content: space-around;
+    }
+    .left a,
+    .right a {
+        top: 30px;
+        padding: 0;
+    }
+    .circleText img {
+        top: 10%;
+        left: 5%;
+    }
+    .brandingText,
+    .designText {
+        width: 40%;
+        margin: 7% 4% 13% 4%;
+    }
+}
+
+// Home page 3rd section adjustment
+@media (max-width: 1082px) {
+    .thirdContent {
+        flex-direction: column;
+        align-items: flex-end;
+        ul {
+            width: 70%;
+        }
+        li {
+            margin-bottom: 5%;
+        }
+    }
+    .leftList {
+        margin-top: 110px;
+    }
+    .rightList {
+        margin: 0;
+    }
+    .iconContainer {
+        width: 55px;
+        height: 55px;
+        margin-right: 5%;
+        i {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+// Home page 1st section adjustment
+@media (max-width: 974px) {
+    .brandingText,
+    .designText {
+        width: 50%;
+        margin: 7% 4% 13% 4%;
+    }
+}
+
+@media (max-width: 940px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
