@@ -177,7 +177,7 @@
         }
     }
     ul.leftList {
-        margin-top: 150px;
+        margin-top: 15%;
     }
     .iconContainer {
         width: 55px;
@@ -328,8 +328,104 @@
     }
 }
 
-@media (max-width: 768px) {
+// Home page 5th section adjustments
+@media (max-width: 850px) {
+    .fifthSection {
+        display: block;
+        position: relative;
+        background: none;
+    }
+    .fifthContent {
+        background: $tertiaryColor;
+        width: 100%;
+        height: 360px;
+        position: absolute;
+        top: 22%;
+        h2.sectionHead {
+            margin: 10% 0 4% 0;
+            padding: 0;
+        }
+        p {
+            width: 60%;
+            margin: 0 auto;
+        }
+        a {
+            margin: 5% 0 10% 0;
+        }
+    }
+    .homeImg3 {
+        width: 100%;
+    }
 
+    // Contact page adjustments
+    .divider::before {
+        left: -10%;
+    }
+    .divider::after {
+        right: -10%;
+    }
+}
+
+// Header navigation switch to mobile style
+@media (max-width: 768px) {
+    h1 {
+        text-align: left;
+    }
+    .homeHeader .mainNav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    // Blog and contact form adjustments
+    h3 {
+        margin-bottom: 8%;
+        padding-bottom: 3%;
+    }
+    .blogComments {
+        margin-bottom: 13%;
+    }
+    .blogForm {
+        margin-bottom: 18%;
+    }
+    .userInfo input {
+        width: 100%;
+        margin-bottom: 7%;
+        padding: 0 1%;
+    }
+    textarea {
+        margin-bottom: 8%;
+    }
+    .getInTouch form {
+        margin-bottom: 14%;
+    }
+
+    // Contact page adjustments
+    .contactDetails {
+        margin-top: 16%;
+        ul {
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 4% 0 8% 0;
+        }
+        li {
+            margin-left: 10%;
+            padding: 5% 0;
+        }
+    }
+    .divider::before,
+    .divider::after {
+        display: none;
+    }
+
+    // Blog page adjustments
+    .firstPost {
+        display: none;
+    }
+    .secondPost {
+        margin: 0 1% 0 0;
+    }
 }
 
 @media (max-width: 480px) {

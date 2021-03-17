@@ -1,5 +1,5 @@
 // Display Flex properties for Header
-nav,
+.mainNav,
 .left,
 .right {
     display: flex;
@@ -8,7 +8,7 @@ nav,
 // Nav code starts HERE!
 .homeHeader {
     padding-top: 45px;
-    nav {
+    .mainNav {
         justify-content: space-between;
     }
 }
@@ -50,4 +50,61 @@ nav,
 
 .fa-shopping-bag:hover::after {
     background: #000;
+}
+
+// Mobile Nav codes start HERE!
+.hamburger {
+    position: relative;
+    display: none;
+    .menuIcon {
+        font-size: 1.8rem;
+        color: $footerColor;
+        position: absolute;
+        top: -38px;
+        right: 0;
+    }
+    .userSearch,
+    .userCart {
+        font-size: 1.5rem;
+    }
+    .userCart::after {
+        font-size: 0.5rem;
+        width: 20px;
+        height: 20px;
+        bottom: 12px;
+        left: 22px;
+        padding: 6px 0 0 2px;
+    }
+}
+
+.mobileNav {
+    background: $primaryColor;
+    width: 50%;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+    transition: 0.2s;
+    display: none;
+}
+
+.mobileNav a {
+    font-family: $headlineFont;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: $footerColor;
+    display: inline-block;
+    border-bottom: 1px solid $borderColor;
+    width: 100%;
+    padding: 5%;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + .mobileNav {
+    display: block;
 }

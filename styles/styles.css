@@ -324,7 +324,7 @@ img {
   margin: 0 auto;
 }
 
-nav,
+.mainNav,
 .left,
 .right {
   display: -webkit-box;
@@ -336,7 +336,7 @@ nav,
   padding-top: 45px;
 }
 
-.homeHeader nav {
+.homeHeader .mainNav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -381,6 +381,66 @@ nav,
 
 .fa-shopping-bag:hover::after {
   background: #000;
+}
+
+.hamburger {
+  position: relative;
+  display: none;
+}
+
+.hamburger .menuIcon {
+  font-size: 1.8rem;
+  color: #333;
+  position: absolute;
+  top: -38px;
+  right: 0;
+}
+
+.hamburger .userSearch,
+.hamburger .userCart {
+  font-size: 1.5rem;
+}
+
+.hamburger .userCart::after {
+  font-size: 0.5rem;
+  width: 20px;
+  height: 20px;
+  bottom: 12px;
+  left: 22px;
+  padding: 6px 0 0 2px;
+}
+
+.mobileNav {
+  background: #FFF;
+  width: 50%;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  z-index: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: none;
+}
+
+.mobileNav a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #333;
+  display: inline-block;
+  border-bottom: 1px solid #E1E1E1;
+  width: 100%;
+  padding: 5%;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .mobileNav {
+  display: block;
 }
 
 header.homePage {
@@ -500,7 +560,7 @@ header.homePage {
   background: url(../assets/home-4.jpeg);
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  height: 925px;
 }
 
 .thirdContent {
@@ -840,7 +900,7 @@ h3 {
   color: #F6F6F6;
   position: absolute;
   top: 0px;
-  left: -23px;
+  left: -20px;
 }
 
 p.commenter {
@@ -1297,7 +1357,7 @@ p.footerText {
     margin-bottom: 5%;
   }
   ul.leftList {
-    margin-top: 150px;
+    margin-top: 15%;
   }
   .iconContainer {
     width: 55px;
@@ -1435,5 +1495,100 @@ p.footerText {
   }
   textarea {
     margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 850px) {
+  .fifthSection {
+    display: block;
+    position: relative;
+    background: none;
+  }
+  .fifthContent {
+    background: #C3DAB7;
+    width: 100%;
+    height: 360px;
+    position: absolute;
+    top: 22%;
+  }
+  .fifthContent h2.sectionHead {
+    margin: 10% 0 4% 0;
+    padding: 0;
+  }
+  .fifthContent p {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .fifthContent a {
+    margin: 5% 0 10% 0;
+  }
+  .homeImg3 {
+    width: 100%;
+  }
+  .divider::before {
+    left: -10%;
+  }
+  .divider::after {
+    right: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    text-align: left;
+  }
+  .homeHeader .mainNav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  h3 {
+    margin-bottom: 8%;
+    padding-bottom: 3%;
+  }
+  .blogComments {
+    margin-bottom: 13%;
+  }
+  .blogForm {
+    margin-bottom: 18%;
+  }
+  .userInfo input {
+    width: 100%;
+    margin-bottom: 7%;
+    padding: 0 1%;
+  }
+  textarea {
+    margin-bottom: 8%;
+  }
+  .getInTouch form {
+    margin-bottom: 14%;
+  }
+  .contactDetails {
+    margin-top: 16%;
+  }
+  .contactDetails ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 4% 0 8% 0;
+  }
+  .contactDetails li {
+    margin-left: 10%;
+    padding: 5% 0;
+  }
+  .divider::before,
+  .divider::after {
+    display: none;
+  }
+  .firstPost {
+    display: none;
+  }
+  .secondPost {
+    margin: 0 1% 0 0;
   }
 }
