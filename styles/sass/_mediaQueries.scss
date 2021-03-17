@@ -220,9 +220,7 @@
     }
     .line1::before {
         height: 100px;
-        position: absolute;
         top: -6%;
-        left: 50%;
     }
     .firstContent {
         flex-direction: column;
@@ -234,7 +232,6 @@
         margin: 7% 0 0 0;
     }
     .designText {
-        width: 340px;
         margin: 7% 0 10% 0;
     }
     .circleText {
@@ -378,10 +375,29 @@
         display: block;
     }
 
+    // Home page 2nd section adjustments
+    .secondContent p {
+        width: 85%;
+    }
+    .toggleArrows {
+        justify-content: center;
+        position: relative;
+        margin: 8% 2% 0 2%;
+        button {
+            padding: 0 5%;
+        }
+    }
+
     // Blog and contact form adjustments
     h3 {
         margin-bottom: 8%;
         padding-bottom: 3%;
+    }
+    .blogFooter li {
+        margin-right: 30px;
+    }
+    .blogFooter i {
+        font-size: 1.2rem;
     }
     .blogComments {
         margin-bottom: 13%;
@@ -402,6 +418,9 @@
     }
 
     // Contact page adjustments
+    .contactImg1 h2 {
+        top: 28%;
+    }
     .contactDetails {
         margin-top: 16%;
         ul {
@@ -426,8 +445,334 @@
     .secondPost {
         margin: 0 1% 0 0;
     }
+
+    // Footer adjustments
+    .socials i {
+        font-size: 1.2rem;
+    }
 }
 
-@media (max-width: 480px) {
+// Footer adjustments
+@media (max-width: 700px) {
+    footer {
+        padding-top: 12%;
+    }
+    .contact,
+    .posts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 5% 0;
+    }
+    p.footerHead {
+        margin-bottom: 7%;
+    }
+    .socials li {
+        justify-content: center;
+        margin: 20px;
+    }
+    .widget {
+        margin-top: 5%;
+        width: 70%;
+        p.footerHead {
+            margin-bottom: 5%;
+        }
+        form {
+            margin-top: 5%;
+        }
+        input {
+            font-size: 0.8rem;
+        }
+    }
+    p.footerText {
+        margin-top: 10%;
+    }
 
+    // Blog page adjustments
+    .mainBlog {
+        padding-top: 12%;
+        h2 {
+            font-size: 2.5rem;
+            padding-bottom: 2%;
+        }
+    }
+}
+
+// Home Page 1st section adjustments
+@media (max-width: 647px) {
+    .line1::before {
+        height: 80px;
+    }
+    .designText {
+        margin-bottom: 15%;
+    }
+    .homeImg1 {
+        padding-top: 20%;
+        img {
+            width: 70%;
+        }
+    }
+    .circleText {
+        width: 100%;
+        img {
+            width: 25%;
+            top: 18%;
+            left: 5%;
+        }
+    }
+
+    // Home page 4th section adjustments
+    .fourthSection h2.sectionHead {
+        padding-top: 16%;
+    }
+    .teamPlayers {
+        width: 270px;
+        height: 270px;
+        .teamHead {
+            padding: 12% 0 8% 8%;
+        }
+    }
+
+    // Home page 5th section adjustments
+    .fifthContent {
+        height: 320px;
+        top: 20%;
+    }
+
+    // Blog page adjustments
+    .blogHeader {
+        display: block;
+        padding-bottom: 30px;
+    }
+    ul.blogger {
+        justify-content: flex-start;
+    }
+    ul.blogInfo {
+        width: 100%;
+        li {
+            margin: 0;
+        }
+        p {
+            padding: 0.5% 0;
+        }
+    }
+}
+
+// Blog page adjustments
+@media (max-width: 575px) {
+    .mainBlog h2 {
+        width: 82%;
+    }
+}
+
+// Home page 3rd section adjustments
+@media (max-width: 567px) {
+    .thirdContent {
+        align-items: center;
+        ul {
+            background: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            li {
+                margin: 0;
+                padding: 5% 3%;
+            }
+            p.homeHead {
+                margin-bottom: 0;
+            }
+        }
+    }
+    ul.leftList {
+        margin-top: 20%;
+    }
+
+    // Footer adjustment
+    .footerContent p {
+        font-size: 0.68rem;
+    }
+    p.footerHead {
+        font-size: 0.8rem;
+    }
+
+    // Contact page adjustments
+    .contactDetails {
+        margin-top: 20%;
+    }
+}
+
+// Home page 3rd section adjustments
+@media (max-width: 508px) {
+    .thirdContent ul li {
+        padding: 3% 3%;
+    }
+    p.homeHead {
+        margin-bottom: 0;
+    }
+    ul.leftList {
+        margin-top: 20%;
+    }
+
+    // Home page 5th section adjustments
+    .fifthContent {
+        height: 270px;
+    }
+    .fifthContent p {
+        width: 80%;
+    }
+
+    // Blog page adjustments
+    .mainBlog h2 {
+        width: 94%;
+    }
+}
+
+// Home page 2nd section adjustments
+@media (max-width: 480px) {
+    .secondContent {
+        padding: 16% 0 14% 0;
+        p {
+            margin-top: 10%;
+        }
+    }
+
+    // Home page 5th section adjustments
+    .fifthContent {
+        top: 17%;
+    }
+
+    // Blog page adjustments
+    .mainBlog {
+        padding: 16% 0;
+        h2 {
+            font-size: 2rem;
+            width: 80%;
+        }
+    }
+    .blogFooter {
+        margin-top: 8%;
+    }
+    .blogGallery {
+        flex-direction: column;
+        margin-bottom: 18%;
+        li {
+            margin: 0 0 8% 0;
+        }
+        img {
+            margin-bottom: 2%;
+        }
+    }
+    .firstPost {
+        display: block;
+    }
+    .blogComments {
+        margin-bottom: 18%;
+    }
+    .avatar {
+        display: none;
+    }
+    .commentText {
+        margin-bottom: 2%;
+    }
+    .commentText::before {
+        display: none;
+    }
+    .blogForm {
+        margin-bottom: 20%;
+     }
+    h3 {
+        margin-bottom: 10%;
+    }
+    .userInfo input {
+        margin-bottom: 10%;
+    }
+    textarea {
+        margin-bottom: 10%;
+    }
+
+    // Footer adjustments
+    footer {
+        padding-top: 20%;
+    }
+    p.footerText {
+        margin-top: 16%;
+    }
+
+    // Contact page adjustment
+    .contactImg1 h2 {
+        font-size: 2.5rem;
+        top: 29%;
+    }
+}
+
+// Home page adjustments
+@media (max-width: 423px) {
+    .line1,
+    .line2 {
+        display: none;
+    }
+    .brandingText,
+    .designText {
+        width: 90%;
+        margin: 10% 0 0 0;
+    }
+    .designText {
+        margin: 7% 0 20% 0;
+    }
+    .secondContent p {
+        font-size: 0.7rem;
+    }
+    .homeImg3 {
+        display: none;
+    }
+    .fifthContent {
+        height: 390px;
+        position: static;
+    }
+
+    // Blog page adjustment
+    .mainBlog h2 {
+        width: 91%;
+    }
+
+    // Contact page adjustments
+    .contactDetails {
+        margin-top: 25%;
+        ul {
+            margin: 4% 0 12% 0;
+        }
+        p {
+            margin: 1% 0 2% 0;
+        }
+    }
+    p.contactHead {
+        margin-bottom: 5%;
+    }
+
+    // Footer adjustments
+    .widget {
+        width: 100%;
+    }
+}
+
+
+// Small adjustments for 400px and below screens
+// Support a min-width of 320px
+@media (max-width: 385px) {
+    .thirdContent li {
+        padding: 5% 1%;
+    }
+    ul.leftList {
+        margin-top: 12%;
+    }
+}
+
+@media (max-width: 350px) {
+    .footerContent p {
+        font-size: 0.61rem;
+    }
+}
+
+@media (max-width: 330px) {
+    ul.leftList {
+        margin-top: 10%;
+    }
 }

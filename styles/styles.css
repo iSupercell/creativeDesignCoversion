@@ -398,15 +398,15 @@ img {
 
 .hamburger .userSearch,
 .hamburger .userCart {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .hamburger .userCart::after {
   font-size: 0.5rem;
   width: 20px;
   height: 20px;
-  bottom: 12px;
-  left: 22px;
+  bottom: 8px;
+  left: 10px;
   padding: 6px 0 0 2px;
 }
 
@@ -424,7 +424,7 @@ img {
 
 .mobileNav a {
   font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.8px;
   text-align: center;
@@ -432,11 +432,11 @@ img {
   display: inline-block;
   border-bottom: 1px solid #E1E1E1;
   width: 100%;
-  padding: 5%;
+  padding: 4%;
 }
 
 input[type="checkbox"] {
-  opacity: 0;
+  display: none;
 }
 
 input[type="checkbox"]:checked + .mobileNav {
@@ -1394,9 +1394,7 @@ p.footerText {
   }
   .line1::before {
     height: 100px;
-    position: absolute;
     top: -6%;
-    left: 50%;
   }
   .firstContent {
     -webkit-box-orient: vertical;
@@ -1413,7 +1411,6 @@ p.footerText {
     margin: 7% 0 0 0;
   }
   .designText {
-    width: 340px;
     margin: 7% 0 10% 0;
   }
   .circleText {
@@ -1543,9 +1540,28 @@ p.footerText {
   .hamburger {
     display: block;
   }
+  .secondContent p {
+    width: 85%;
+  }
+  .toggleArrows {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+    margin: 8% 2% 0 2%;
+  }
+  .toggleArrows button {
+    padding: 0 5%;
+  }
   h3 {
     margin-bottom: 8%;
     padding-bottom: 3%;
+  }
+  .blogFooter li {
+    margin-right: 30px;
+  }
+  .blogFooter i {
+    font-size: 1.2rem;
   }
   .blogComments {
     margin-bottom: 13%;
@@ -1563,6 +1579,9 @@ p.footerText {
   }
   .getInTouch form {
     margin-bottom: 14%;
+  }
+  .contactImg1 h2 {
+    top: 28%;
   }
   .contactDetails {
     margin-top: 16%;
@@ -1590,5 +1609,309 @@ p.footerText {
   }
   .secondPost {
     margin: 0 1% 0 0;
+  }
+  .socials i {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  footer {
+    padding-top: 12%;
+  }
+  .contact,
+  .posts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 0 5% 0;
+  }
+  p.footerHead {
+    margin-bottom: 7%;
+  }
+  .socials li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+  }
+  .widget {
+    margin-top: 5%;
+    width: 70%;
+  }
+  .widget p.footerHead {
+    margin-bottom: 5%;
+  }
+  .widget form {
+    margin-top: 5%;
+  }
+  .widget input {
+    font-size: 0.8rem;
+  }
+  p.footerText {
+    margin-top: 10%;
+  }
+  .mainBlog {
+    padding-top: 12%;
+  }
+  .mainBlog h2 {
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+  }
+}
+
+@media (max-width: 647px) {
+  .line1::before {
+    height: 80px;
+  }
+  .designText {
+    margin-bottom: 15%;
+  }
+  .homeImg1 {
+    padding-top: 20%;
+  }
+  .homeImg1 img {
+    width: 70%;
+  }
+  .circleText {
+    width: 100%;
+  }
+  .circleText img {
+    width: 25%;
+    top: 18%;
+    left: 5%;
+  }
+  .fourthSection h2.sectionHead {
+    padding-top: 16%;
+  }
+  .teamPlayers {
+    width: 270px;
+    height: 270px;
+  }
+  .teamPlayers .teamHead {
+    padding: 12% 0 8% 8%;
+  }
+  .fifthContent {
+    height: 320px;
+    top: 20%;
+  }
+  .blogHeader {
+    display: block;
+    padding-bottom: 30px;
+  }
+  ul.blogger {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  ul.blogInfo {
+    width: 100%;
+  }
+  ul.blogInfo li {
+    margin: 0;
+  }
+  ul.blogInfo p {
+    padding: 0.5% 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .mainBlog h2 {
+    width: 82%;
+  }
+}
+
+@media (max-width: 567px) {
+  .thirdContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .thirdContent ul {
+    background: rgba(255, 255, 255, 0.7);
+    width: 100%;
+  }
+  .thirdContent ul li {
+    margin: 0;
+    padding: 5% 3%;
+  }
+  .thirdContent ul p.homeHead {
+    margin-bottom: 0;
+  }
+  ul.leftList {
+    margin-top: 20%;
+  }
+  .footerContent p {
+    font-size: 0.68rem;
+  }
+  p.footerHead {
+    font-size: 0.8rem;
+  }
+  .contactDetails {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 508px) {
+  .thirdContent ul li {
+    padding: 3% 3%;
+  }
+  p.homeHead {
+    margin-bottom: 0;
+  }
+  ul.leftList {
+    margin-top: 20%;
+  }
+  .fifthContent {
+    height: 270px;
+  }
+  .fifthContent p {
+    width: 80%;
+  }
+  .mainBlog h2 {
+    width: 94%;
+  }
+}
+
+@media (max-width: 480px) {
+  .secondContent {
+    padding: 16% 0 14% 0;
+  }
+  .secondContent p {
+    margin-top: 10%;
+  }
+  .fifthContent {
+    top: 17%;
+  }
+  .mainBlog {
+    padding: 16% 0;
+  }
+  .mainBlog h2 {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .blogFooter {
+    margin-top: 8%;
+  }
+  .blogGallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 18%;
+  }
+  .blogGallery li {
+    margin: 0 0 8% 0;
+  }
+  .blogGallery img {
+    margin-bottom: 2%;
+  }
+  .firstPost {
+    display: block;
+  }
+  .blogComments {
+    margin-bottom: 18%;
+  }
+  .avatar {
+    display: none;
+  }
+  .commentText {
+    margin-bottom: 2%;
+  }
+  .commentText::before {
+    display: none;
+  }
+  .blogForm {
+    margin-bottom: 20%;
+  }
+  h3 {
+    margin-bottom: 10%;
+  }
+  .userInfo input {
+    margin-bottom: 10%;
+  }
+  textarea {
+    margin-bottom: 10%;
+  }
+  footer {
+    padding-top: 20%;
+  }
+  p.footerText {
+    margin-top: 16%;
+  }
+  .contactImg1 h2 {
+    font-size: 2.5rem;
+    top: 29%;
+  }
+}
+
+@media (max-width: 423px) {
+  .line1,
+  .line2 {
+    display: none;
+  }
+  .brandingText,
+  .designText {
+    width: 90%;
+    margin: 10% 0 0 0;
+  }
+  .designText {
+    margin: 7% 0 20% 0;
+  }
+  .secondContent p {
+    font-size: 0.7rem;
+  }
+  .homeImg3 {
+    display: none;
+  }
+  .fifthContent {
+    height: 390px;
+    position: static;
+  }
+  .mainBlog h2 {
+    width: 91%;
+  }
+  .contactDetails {
+    margin-top: 25%;
+  }
+  .contactDetails ul {
+    margin: 4% 0 12% 0;
+  }
+  .contactDetails p {
+    margin: 1% 0 2% 0;
+  }
+  p.contactHead {
+    margin-bottom: 5%;
+  }
+  .widget {
+    width: 100%;
+  }
+}
+
+@media (max-width: 385px) {
+  .thirdContent li {
+    padding: 5% 1%;
+  }
+  ul.leftList {
+    margin-top: 12%;
+  }
+}
+
+@media (max-width: 350px) {
+  .footerContent p {
+    font-size: 0.61rem;
+  }
+}
+
+@media (max-width: 330px) {
+  ul.leftList {
+    margin-top: 10%;
   }
 }
