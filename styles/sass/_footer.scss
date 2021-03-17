@@ -1,5 +1,5 @@
 footer {
-    background: $footerColor;
+    background: $darkColor;
     padding-top: 8%;
     p,
     p.footerHead,
@@ -82,7 +82,7 @@ p.footerText {
     letter-spacing: 8px;
     color: $primaryColor;
     text-align: center;
-    border-top: 1px solid $footerBorderColor;
+    border-top: 1px solid $darkBorderColor;
     margin-top: 8%;
     padding: 4%;
 }

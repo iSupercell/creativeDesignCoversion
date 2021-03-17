@@ -1,11 +1,10 @@
 // Blog page header codes start HERE!
 header.blogPage {
     background: url(../assets/blog-1.jpeg);
-    background-position: center;
+    background-position: top center;
     background-size: cover;
     height: 100vh;
 }
-
 
 // Main blog codes start HERE!
 h2 {
@@ -16,7 +15,7 @@ h2 {
     padding: 6% 0;
     a {
         font-size: 0.65rem;
-        color: $blogColor;
+        color: $textColor;
     }
 }
 
@@ -52,13 +51,13 @@ p.blogLabel {
 
 ul p {
     font-size: 0.65rem;
-    color: $blogColor;
+    color: $textColor;
     margin: 0;
 }
 
 // Blog post content codes start HERE!
 .blogContent p {
-    color: $blogColor;
+    color: $textColor;
     margin: 2% 0;
 }
 
@@ -131,7 +130,7 @@ h3 {
     width: 100%;
     position: relative;
     p {
-        color: $commentColor;
+        color: $darkTextColor;
         margin: 0;
         padding: 0.4% 0;
     }

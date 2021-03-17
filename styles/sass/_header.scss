@@ -58,7 +58,7 @@
     display: none;
     .menuIcon {
         font-size: 1.8rem;
-        color: $footerColor;
+        color: $darkColor;
         position: absolute;
         top: -38px;
         right: 0;
@@ -94,7 +94,7 @@
     text-transform: uppercase;
     letter-spacing: 0.8px;
     text-align: center;
-    color: $footerColor;
+    color: $darkColor;
     display: inline-block;
     border-bottom: 1px solid $borderColor;
     width: 100%;
@@ -102,6 +102,9 @@
 }
 
 input[type="checkbox"] {
+    position: absolute;
+    top: -200px;
+    right: 0;
     display: none;
 }
 

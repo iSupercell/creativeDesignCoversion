@@ -14,7 +14,7 @@ header.homePage {
 
 .line1::before {
     content: '';
-    border-left: 1px solid $blogColor;
+    border-left: 1px solid $textColor;
     height: 160px;
     position: absolute;
     top: -10%;
@@ -64,7 +64,7 @@ header.homePage {
         text-align: center;
         font-style: italic;
         line-height: 30px;
-        color: $commentColor;
+        color: $darkTextColor;
         width: 68%;
         margin-top: 3%;
     }
@@ -88,7 +88,7 @@ header.homePage {
     }
     button:hover,
     button:focus {
-        color: $commentColor;
+        color: $darkTextColor;
     }
 }
 
@@ -128,7 +128,7 @@ header.homePage {
     margin-right: 10%;
     i {
         font-size: 1.5rem;
-        color: $footerColor;
+        color: $darkColor;
         padding: 25px;
     }
 }
@@ -145,7 +145,7 @@ p.homeHead {
 
 .line2::before {
     content: '';
-    border-left: 1px solid $blogColor;
+    border-left: 1px solid $textColor;
     height: 80px;
     position: absolute;
     top: 0;
@@ -175,13 +175,13 @@ h2.sectionHead {
     display: block;
     p {
         font-size: 0.7rem;
-        color: $commentColor;
+        color: $darkTextColor;
         padding: 0 5% 5% 8%;
     }
     .teamHead {
         font-size: 0.85rem;
         letter-spacing: 2.3px;
-        color: $footerColor;
+        color: $darkColor;
         padding: 20% 0 4% 8%;
     }
 }
@@ -193,7 +193,7 @@ h2.sectionHead {
     width: 270px;
     height: 270px;
     .teamHead {
-        color: $footerColor;
+        color: $darkColor;
         font-size: 0.75rem;
         letter-spacing: 1.8px;
         text-align: center;
@@ -219,7 +219,7 @@ h2.sectionHead {
     p {
         text-align: center;
         width: 52%;
-        color: $commentColor;
+        color: $darkTextColor;
     }
     a {
         font-size: 0.7rem;

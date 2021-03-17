@@ -436,6 +436,9 @@ img {
 }
 
 input[type="checkbox"] {
+  position: absolute;
+  top: -200px;
+  right: 0;
   display: none;
 }
 
@@ -747,7 +750,7 @@ h2.sectionHead {
 
 header.blogPage {
   background: url(../assets/blog-1.jpeg);
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   height: 100vh;
 }
@@ -976,13 +979,14 @@ textarea:focus {
   background-position: left;
   background-size: cover;
   height: 24vh;
+  position: relative;
   margin-top: 45px;
 }
 
 .contactImg1 h2 {
   width: 20%;
   position: absolute;
-  top: 32%;
+  top: 60%;
 }
 
 .contactImg1 h2::before {
@@ -1300,6 +1304,9 @@ p.footerText {
 }
 
 @media (max-width: 1111px) {
+  .homeHeader {
+    padding-top: 25px;
+  }
   .homeHeader nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1313,7 +1320,7 @@ p.footerText {
   }
   .left a,
   .right a {
-    top: 30px;
+    top: 20px;
     padding: 0;
   }
   .circleText img {
@@ -1496,6 +1503,9 @@ p.footerText {
 }
 
 @media (max-width: 850px) {
+  ul.leftList {
+    margin-top: 20%;
+  }
   .fifthSection {
     display: block;
     position: relative;
@@ -1580,9 +1590,6 @@ p.footerText {
   .getInTouch form {
     margin-bottom: 14%;
   }
-  .contactImg1 h2 {
-    top: 28%;
-  }
   .contactDetails {
     margin-top: 16%;
   }
@@ -1612,6 +1619,12 @@ p.footerText {
   }
   .socials i {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  ul.leftList {
+    margin-top: 15%;
   }
 }
 
@@ -1766,9 +1779,6 @@ p.footerText {
   p.homeHead {
     margin-bottom: 0;
   }
-  ul.leftList {
-    margin-top: 20%;
-  }
   .fifthContent {
     height: 270px;
   }
@@ -1848,7 +1858,12 @@ p.footerText {
   }
   .contactImg1 h2 {
     font-size: 2.5rem;
-    top: 29%;
+  }
+}
+
+@media (max-width: 470px) {
+  ul.leftList {
+    margin-top: 24%;
   }
 }
 
@@ -1867,6 +1882,9 @@ p.footerText {
   }
   .secondContent p {
     font-size: 0.7rem;
+  }
+  ul.leftList {
+    margin-top: 28%;
   }
   .homeImg3 {
     display: none;
