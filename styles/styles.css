@@ -1922,7 +1922,7 @@ p.footerText {
   }
 }
 
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   .thirdContent ul li {
     padding: 2% 3%;
   }
