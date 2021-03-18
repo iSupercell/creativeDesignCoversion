@@ -978,7 +978,7 @@ textarea:focus {
   background: url(../assets/contact-1.jpeg);
   background-position: left;
   background-size: cover;
-  height: 24vh;
+  height: 25vh;
   position: relative;
   margin-top: 45px;
 }
@@ -1538,6 +1538,9 @@ p.footerText {
   .divider::after {
     right: -10%;
   }
+  .contactImg1 h2 {
+    font-size: 2.3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1856,9 +1859,6 @@ p.footerText {
   p.footerText {
     margin-top: 16%;
   }
-  .contactImg1 h2 {
-    font-size: 2.5rem;
-  }
 }
 
 @media (max-width: 470px) {
@@ -1931,5 +1931,69 @@ p.footerText {
 @media (max-width: 330px) {
   ul.leftList {
     margin-top: 10%;
+  }
+}
+
+@media (max-height: 620px) {
+  h1 {
+    text-align: left;
+  }
+  .homeHeader .mainNav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .contactImg1 {
+    margin-bottom: 130px;
+  }
+  .contactImg1 h2 {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-height: 450px) {
+  .thirdContent {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .thirdContent ul {
+    background: rgba(255, 255, 255, 0.7);
+    width: 70%;
+  }
+  .thirdContent ul li {
+    margin: 0;
+    padding: 5% 3%;
+  }
+  .thirdContent ul p.homeHead {
+    margin-bottom: 0;
+  }
+  ul.leftList {
+    margin-top: 10%;
+  }
+}
+
+@media (max-height: 450px) and (max-width: 800px) {
+  .thirdContent ul {
+    width: 80%;
+  }
+}
+
+@media (max-height: 450px) and (max-width: 700px) {
+  ul.leftList {
+    margin-top: 18%;
+  }
+}
+
+@media (max-height: 450px) and (max-width: 614px) {
+  .thirdContent ul {
+    width: 90%;
+  }
+}
+
+@media (max-height: 450px) and (max-width: 547px) {
+  .thirdContent ul li {
+    padding: 3.5% 3%;
   }
 }

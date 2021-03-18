@@ -3,7 +3,7 @@
     background: url(../assets/contact-1.jpeg);
     background-position: left;
     background-size: cover;
-    height: 24vh;
+    height: 25vh;
     position: relative;
     margin-top: 45px;
     h2 {
@@ -15,7 +15,7 @@
         content: '';
         position: absolute;
         top: -45px;
-        border-top: 3px solid #000;
+        border-top: 3px solid $defaultBlack;
         width: 40px;
     }
 }
@@ -37,7 +37,7 @@
     }
     .contactTitle {
         font-size: 0.7rem;
-        color: #000;
+        color: $defaultBlack;
         font-weight: bold;
         letter-spacing: 5px;
         padding: 12% 0 5% 0;
@@ -87,7 +87,7 @@
 p.contactHead {
     font-size: 0.9rem;
     font-weight: bold;
-    color: #000;
+    color: $defaultBlack;
     margin-bottom: 2%;
 }
 

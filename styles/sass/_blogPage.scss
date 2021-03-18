@@ -62,7 +62,7 @@ ul p {
 }
 
 p.starterText {
-    color: #000;
+    color: $defaultBlack;
     font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ p.starterText {
     }
     i {
         font-size: 0.8rem;
-        color: #000;
+        color: $defaultBlack;
     }
 }
 
@@ -147,7 +147,7 @@ h3 {
 
 p.commenter {
     font-size: 0.67rem;
-    color: #000;
+    color: $defaultBlack;
     a {
         color: $blogReplyLink;
         text-transform: none;
@@ -192,14 +192,14 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $defaultBlack;
 }
 
 .contactForm button {
     font-size: 0.7rem;
     background: none;
     border: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid $defaultBlack;
     margin-top: 2%;
     padding-bottom: 0.8%;
 }
