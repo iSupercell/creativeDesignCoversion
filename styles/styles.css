@@ -1922,6 +1922,15 @@ p.footerText {
   }
 }
 
+@media (min-width: 360px) {
+  .thirdContent ul li {
+    padding: 2% 3%;
+  }
+  ul.leftList {
+    margin-top: 8%;
+  }
+}
+
 @media (max-width: 350px) {
   .footerContent p {
     font-size: 0.61rem;
