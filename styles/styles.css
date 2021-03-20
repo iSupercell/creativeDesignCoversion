@@ -419,7 +419,6 @@ img {
   z-index: 1;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  display: none;
 }
 
 .mobileNav a {
@@ -435,15 +434,8 @@ img {
   padding: 4%;
 }
 
-input[type="checkbox"] {
-  position: absolute;
-  top: -200px;
-  right: 0;
-  display: none;
-}
-
-input[type="checkbox"]:checked + .mobileNav {
-  display: block;
+.hide {
+  visibility: hidden;
 }
 
 header.homePage {

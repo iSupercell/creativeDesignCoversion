@@ -85,7 +85,6 @@
     right: 0;
     z-index: 1;
     transition: 0.2s;
-    display: none;
 }
 
 .mobileNav a {
@@ -101,13 +100,7 @@
     padding: 4%;
 }
 
-input[type="checkbox"] {
-    position: absolute;
-    top: -200px;
-    right: 0;
-    display: none;
-}
-
-input[type="checkbox"]:checked + .mobileNav {
-    display: block;
+// To be used for class toggle in JS
+.hide {
+    visibility: hidden;
 }
