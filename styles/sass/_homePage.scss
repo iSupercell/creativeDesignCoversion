@@ -70,8 +70,49 @@ header.homePage {
     }
 }
 
-.homeImg2 img {
+.homeImg2 {
+    width: 289px;
+    height: 289px;
     border-radius: 50%;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.bullet {
+    width: 12px;
+    height: 12px;
+    background: $textColor;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 30px;
+    transition: background 0.4s ease;
+}
+
+.bullet:hover,
+.bullet:focus,
+.bullet:active,
+.active {
+    background: $darkColor;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade {
+    animation: fade 0.5s both;
 }
 
 .toggleArrows {
@@ -84,7 +125,7 @@ header.homePage {
         font-size: 2.5rem;
         background: none;
         border: none;
-        transition: 0.2s;
+        transition: 0.3s ease;
     }
     button:hover,
     button:focus {
