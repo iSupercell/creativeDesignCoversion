@@ -22,6 +22,11 @@ const next = document.querySelector(`.arrowRight`);
 let slideNumber = 0;
 const totalSlide = slides.length;
 
+// When changing from one slide to the other,
+// the current slide will become hidden and
+// the active bullet will lose the "active" class
+// The next slide will toggle the hidden property off
+// and the next bullet will gain the "active" class
 const focusSlide = () => {
     for (let slide of slides) {
         slide.classList.remove(`show`);
